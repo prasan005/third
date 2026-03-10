@@ -4,7 +4,7 @@ kind: Deployment
 metadata: 
   name: flm
 spec:
-  replicas: 2
+  replicas: 4
   selector: 
     matchLabels:
       app: swiggy
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: cont1
-          image: shaikmustafa/cycle
+          image: shaikmustafa/paytm:bus
           ports:
             - containerPort: 80
